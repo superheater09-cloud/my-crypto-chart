@@ -4,4 +4,3 @@ pandas_ta
 plotly
 requests
 numpy
-python-telegram-bot
