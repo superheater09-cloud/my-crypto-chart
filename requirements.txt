@@ -3,6 +3,5 @@ pandas
 pandas_ta
 plotly
 requests
-mplfinance
 numpy
 python-telegram-bot
