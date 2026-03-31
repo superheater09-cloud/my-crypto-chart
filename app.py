@@ -20,7 +20,7 @@ except:
 @st.cache_data(ttl=300)
 def get_data(symbol, interval):
     try:
-        url = f"https://api.binance.com/api/v3/klines?symbol={symbol}USDT&interval={interval}&limit=500"
+        url = f"https://api.binance.com/api/v3/klines?symbol={symbol}USDT&interval={interval}&limit=200"
         res = requests.get(url, timeout=10).json()
         df = pd.DataFrame(res).iloc[:, :6]
         df.columns = ['Time', 'Open', 'High', 'Low', 'Close', 'Volume']
